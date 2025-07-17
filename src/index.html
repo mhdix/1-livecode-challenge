@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge #1</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Challenge #1</title>
-  <link rel="stylesheet" href="./styles/index.css">
-</head>
+  <body>
+    <h1>چالش اول - بوت کمپ اول</h1>
+    <button class="btn btn--primary" id="open-modal">افزودن اطلاعات</button>
 
-<body>
-  <h1>چالش اول - بوت کمپ اول</h1>
-  <button class="btn btn--primary" id="open-modal">افزودن اطلاعات</button>
-
-  <div class="backdrop">
-    <div class="modal">
-      <div class="modal__header">
-        <p>تکمیل اطلاعات</p>
-        <button class="close-modal">❌</button>
+    <div class="backdrop">
+      <div class="modal">
+        <div class="modal__header">
+          <p class="modal__title">تکمیل اطلاعات</p>
+          <button class="close-modal">❌</button>
+        </div>
+        <hr />
+        <div class="modal__content">
+          <div class="modal__item">
+            <p>نام و نام خانوادگی</p>
+            <input class="input" type="text" />
+          </div>
+          <div class="modal__item">
+            <p>ایمیل</p>
+            <input class="input" type="text" />
+          </div>
+          <div class="modal__item">
+            <p>شماره موبایل</p>
+            <input class="input" type="text" />
+          </div>
+          <div class="modal__item">
+            <p>تخصص</p>
+            <input class="input" type="text" />
+          </div>
+        </div>
+        <div class="modal__actions">
+          <div class="modal__item">
+            <button class="btn btn--cta">تایید</button>
+          </div>
+          <div class="modal__item">
+            <button class="btn">انصراف</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="./js/index.js"></script>
-</body>
-
+    <script src="./js/index.js"></script>
+  </body>
 </html>
