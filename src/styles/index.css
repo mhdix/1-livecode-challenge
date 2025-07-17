@@ -135,6 +135,10 @@ hr {
   font-size: 1.6rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .modal__header {
   font-size: 1.8rem;
   display: flex;
