@@ -8,40 +8,51 @@
   </head>
 
   <body>
-    <h1>چالش اول - بوت کمپ اول</h1>
-    <button class="btn btn--primary" id="open-modal">افزودن اطلاعات</button>
+    <div class="container">
+      <div class="title">
+        <h1>چالش اول - بوت کمپ اول</h1>
+        <button class="btn btn--primary" id="open-modal">افزودن اطلاعات</button>
+      </div>
 
-    <div class="backdrop">
-      <div class="modal">
-        <div class="modal__header">
-          <p class="modal__title">تکمیل اطلاعات</p>
-          <button class="close-modal">❌</button>
-        </div>
-        <hr />
-        <div class="modal__content">
-          <div class="modal__item">
-            <p>نام و نام خانوادگی</p>
-            <input class="input" type="text" />
+      <div class="backdrop">
+        <div class="modal">
+          <div class="modal__header">
+            <p class="modal__title">تکمیل اطلاعات</p>
+            <button class="close-modal">❌</button>
           </div>
-          <div class="modal__item">
-            <p>ایمیل</p>
-            <input class="input" type="text" />
+          <hr />
+          <div class="modal__content">
+            <div class="modal__item">
+              <p>نام و نام خانوادگی</p>
+              <input class="input" type="text" />
+            </div>
+            <div class="modal__item">
+              <p>ایمیل</p>
+              <input class="input" type="email" />
+            </div>
+            <div class="modal__item">
+              <p>شماره موبایل</p>
+              <input class="input input--number" type="number" />
+            </div>
+            <div class="modal__item">
+              <p>تخصص</p>
+              <select class="input">
+                <option value="">html</option>
+                <option value="">css</option>
+                <option value="">tailwindCss</option>
+                <option value="">javaScript</option>
+                <option value="">react.js</option>
+                <option value="">next.js</option>
+              </select>
+            </div>
           </div>
-          <div class="modal__item">
-            <p>شماره موبایل</p>
-            <input class="input" type="text" />
-          </div>
-          <div class="modal__item">
-            <p>تخصص</p>
-            <input class="input" type="text" />
-          </div>
-        </div>
-        <div class="modal__actions">
-          <div class="modal__item">
-            <button class="btn btn--cta">تایید</button>
-          </div>
-          <div class="modal__item">
-            <button class="btn close-modal">انصراف</button>
+          <div class="modal__actions">
+            <div class="modal__item">
+              <button class="btn btn--cta close-modal">تایید</button>
+            </div>
+            <div class="modal__item">
+              <button class="btn close-modal">انصراف</button>
+            </div>
           </div>
         </div>
       </div>
