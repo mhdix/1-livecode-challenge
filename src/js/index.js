@@ -1,5 +1,5 @@
 const openModalBtn = document.querySelector("#open-modal");
-const closeModalBtn = document.querySelector(".close-modal");
+const closeModalBtns = document.querySelectorAll(".close-modal");
 const backdrop = document.querySelector(".backdrop");
 const modal = document.querySelector(".modal");
 
@@ -12,6 +12,6 @@ function closeModal(e) {
 }
 
 openModalBtn.addEventListener("click", openModal);
-closeModalBtn.addEventListener("click", closeModal);
+closeModalBtns.forEach((btn) => btn.addEventListener("click", closeModal));
 backdrop.addEventListener("click", closeModal);
 modal.addEventListener("click", (e) => e.stopPropagation());
